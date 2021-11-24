@@ -42,9 +42,14 @@ Information about how it works can be seen on Report.pdf file.
 
 You can find the following files on the folder:
 Navigation.ipynb //// Main file with instructions and outputs.
+
 Training.py /// Other file to train the NN, DON'T use it if running from Navigation
+
 dqn_agent.py /// Agent for the NN
+
 model.py /// QNetwork architecture
+
+Navigation project with DQ Network.pdf /// PDF with explanation about the algorithm used and results.
 
 ### (Optional) Challenge: Learning from Pixels
 
