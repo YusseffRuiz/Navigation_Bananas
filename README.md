@@ -21,8 +21,10 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
 
 ### Getting Started
+1. Since this is a project created based on Udacity gitHub Repository. You can download the whole folder:
+https://github.com/udacity/deep-reinforcement-learning.git
 
-1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
+2. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
     - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
@@ -32,7 +34,63 @@ The task is episodic, and in order to solve the environment, your agent must get
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
-2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
+3. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
+
+
+
+## Dependencies
+
+To set up your python environment to run the code in this repository, follow the instructions below.
+
+1. Create (and activate) a new environment with Python 3.6.
+
+	- __Linux__ or __Mac__: 
+	```bash
+	conda create --name drlnd python=3.6
+	source activate drlnd
+	```
+	- __Windows__: 
+	```bash
+	conda create --name drlnd python=3.6 
+	activate drlnd
+	```
+	
+2. Follow the instructions in [this repository](https://github.com/openai/gym) to perform a minimal install of OpenAI gym.  
+	- Next, install the **classic control** environment group by following the instructions [here](https://github.com/openai/gym#classic-control).
+	- Then, install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).
+	
+3. Clone the repository:
+https://github.com/YusseffRuiz/Navigation_Bananas.git
+
+Since this use as base the repository from Udacity, it requires to install the following:
+
+```
+tensorflow==1.7.1
+Pillow>=4.2.1
+matplotlib
+numpy>=1.11.0
+jupyter
+pytest>=3.2.2
+docopt
+pyyaml
+protobuf==3.5.2
+grpcio==1.11.0
+torch==0.4.0
+pandas
+scipy
+ipykernel
+
+```
+It is important to install them in the new environemnt created for this to work correctly. If you have any issues, please refer to the community help question in:
+https://github.com/udacity/deep-reinforcement-learning/issues/49
+
+4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `drlnd` environment.  
+```bash
+python -m ipykernel install --user --name drlnd --display-name "drlnd"
+```
+
+5. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
+
 
 ### Instructions
 
@@ -67,41 +125,4 @@ Then, place the file in the `p1_navigation/` folder in the DRLND GitHub reposito
 
 (_For AWS_) If you'd like to train the agent on AWS, you must follow the instructions to [set up X Server](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above.
 
-
-## Dependencies
-
-To set up your python environment to run the code in this repository, follow the instructions below.
-
-1. Create (and activate) a new environment with Python 3.6.
-
-	- __Linux__ or __Mac__: 
-	```bash
-	conda create --name drlnd python=3.6
-	source activate drlnd
-	```
-	- __Windows__: 
-	```bash
-	conda create --name drlnd python=3.6 
-	activate drlnd
-	```
-	
-2. Follow the instructions in [this repository](https://github.com/openai/gym) to perform a minimal install of OpenAI gym.  
-	- Next, install the **classic control** environment group by following the instructions [here](https://github.com/openai/gym#classic-control).
-	- Then, install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).
-	
-3. Clone the repository:
-https://github.com/YusseffRuiz/Navigation_Bananas.git
-
-Since this use as base the repository from Udacity, it requires to install the following:
-
-```
-
-4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `drlnd` environment.  
-```bash
-python -m ipykernel install --user --name drlnd --display-name "drlnd"
-```
-or via conda:
-conda 
-
-5. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
 
